@@ -8,6 +8,27 @@
 
 ---
 
+## Sample Document
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="page_images/Screenshot 2026-03-04 180249.png" width="100%" alt="17th-century Spanish manuscript page 1"/>
+      <br/>
+      <sub><b>Page 1</b> — 17th-century Spanish handwritten manuscript</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="page_images/Screenshot 2026-03-04 180301.png" width="100%" alt="17th-century Spanish manuscript page 2"/>
+      <br/>
+      <sub><b>Page 2</b> — Note the long-s (ſ) characters Tesseract fails on</sub>
+    </td>
+  </tr>
+</table>
+
+> **The core challenge:** Characters like the long-s (ſ), archaic ligatures, and Renaissance handwriting styles are completely absent from modern OCR training data — causing 55–65% Character Error Rate with off-the-shelf engines.
+
+---
+
 ## Overview
 
 This repository contains my evaluation test submission for the **RenAIssance OCR-2** project under **HumanAI Foundation — GSoC 2026**.
