@@ -1,0 +1,22 @@
+# Historical OCR Preprocessing Config
+grayscale: true
+target_size: [1024, null]  # Width 1024px, auto height
+denoise: true
+enhance_contrast: true
+binarize: false
+# src/data/utils.py (from your notebook)
+import pandas as pd
+import numpy as np
+from pathlib import Path
+
+def load_dataset(csv_path):
+    """Load dataset from CSV (from your notebook)."""
+    df = pd.read_csv(csv_path)
+    return df
+
+def explore_data(df):
+    """Data exploration summary."""
+    print(f"Dataset shape: {df.shape}")
+    print(f"Missing values:\n{df.isnull().sum()}")
+    print(f"Text length stats:\n{df['text'].str.len().describe()}")
+    return df
